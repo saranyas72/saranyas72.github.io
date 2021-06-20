@@ -1,0 +1,308 @@
+.heading {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    margin-top: 30px;
+}
+
+.title {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 0px;
+}
+.subtitle {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: dodgerblue;
+}
+
+.quick-info {
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    padding-top: 10px;
+    padding-left: 0;
+}
+
+.quick-info a, .quick-info a:hover {
+    color: #212529;
+    text-decoration: none;
+}
+
+.quick-info-left, .quick-info-right {
+    padding-left: 0;
+    padding-top: 0;
+}
+
+.content {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 0;
+}
+
+.section-title {
+    text-transform: uppercase;
+    border-bottom: 3px solid #212529;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.work-ex, .education {
+    padding-top: 10px;;
+}
+
+.education {
+    padding-bottom: 10px;;
+    border-bottom: 1px dashed #868e96;
+}
+
+.education:last-child {
+    border-bottom: none;
+}
+
+.work-title, .education-title {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.work-place, .education-place {
+    color: dodgerblue;
+    font-weight: 500;
+}
+
+.work-period-location, .education-period-location {
+    font-size: 0.75rem;
+    color:#868e96;
+}
+
+.work-period-location i:last-child, .education-period-location i:last-child {
+    padding-left: 20px;
+}
+
+.work-summary {
+    padding-top: 10px;
+}
+
+.skill-list {
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.skill {
+    display:flex;
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #868e96;
+}
+
+.skill:last-child {
+    border-bottom: none;
+}
+
+.skill-content {
+    padding-left: 0;
+}
+
+.skill-details {
+    padding-left: 0;
+}
+
+.skill-level {
+    color: #868e96;
+    font-size: 0.80rem;
+}
+
+.skill-name {
+    font-weight: bold;
+}
+
+.blue-dot {
+    color: dodgerblue;
+}
+
+.black-dot {
+    color: black;
+}
+
+.other-skills span {
+    padding-bottom: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    display: inline-block;
+    border-bottom: 2px solid #868e96;
+}
+
+.certification-title {
+    color: dodgerblue;
+    font-weight: 500;
+}
+
+.certification-time {
+    color: #868e96;
+    font-size: 0.80rem;
+}
+
+.certification-summary {
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+    margin-top:10px;
+    border-bottom: 1px dashed #868e96;
+}
+
+.certification-icon {
+    color: dodgerblue;
+    font-size: 1.5rem;
+}
+
+.block-left {
+    height: 228px;
+}
+
+.block-right {
+    height: 394px;
+}
+
+.section-block {
+    height: 20px;
+}
+
+@media print {
+    body {
+        font-size: 19px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    .screen {
+        display: none;
+    }
+
+    .card {
+        border: none;
+    }
+
+    .card-body {
+        padding: 0;
+    }
+
+    .badge {
+        border: 0.07rem solid #868e96;
+    }
+
+    .badge-primary {
+        color: inherit;
+        background-color: inherit;
+    }
+}
+
+@media not print {
+    .print {
+        display: none;
+    }
+
+    @media (min-width: 576px) {
+        .page {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            box-shadow: 1px 1px 10px 0 rgba(0,0,0,0.75);
+            position: relative;
+            padding: 32px;
+        }
+    }
+
+    h1, h2, h3, h4 {
+        font-weight: 300;
+    }
+
+    h2 {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    dt {
+        font-weight: normal;
+    }
+
+    strong {
+        font-weight: 500;
+    }
+}
+
+a .fa {
+    text-decoration: none !important;
+    margin-right: 5px;
+}
+
+.badge {
+    font-weight: normal;
+    letter-spacing: 0.05rem;
+}
+
+@media print {
+    .col-print-1 {
+        flex: 0 0 8.333333%;
+        max-width: 8.333333%;
+    }
+
+    .col-print-2 {
+        flex: 0 0 16.666667%;
+        max-width: 16.666667%;
+    }
+
+    .col-print-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+
+    .col-print-4 {
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+
+    .col-print-5 {
+        flex: 0 0 41.666667%;
+        max-width: 41.666667%;
+    }
+
+    .col-print-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .col-print-7 {
+        flex: 0 0 58.333333%;
+        max-width: 58.333333%;
+    }
+
+    .col-print-8 {
+        flex: 0 0 66.666667%;
+        max-width: 66.666667%;
+    }
+
+    .col-print-9 {
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+
+    .col-print-10 {
+        flex: 0 0 83.333333%;
+        max-width: 83.333333%;
+    }
+
+    .col-print-11 {
+        flex: 0 0 91.666667%;
+        max-width: 91.666667%;
+    }
+
+    .col-print-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
